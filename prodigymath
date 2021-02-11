@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace prodigy
+{
+    class Program
+    {
+        static void Main()
+        {
+            int mult1 = 13, mult2 = 31, total1 = 0, total2 = 0, total;
+            const int limit = 1000;
+         
+
+            while (mult1 <= limit)
+            {
+                total1 = total1 += mult1;
+                mult1 += 13;
+
+            }
+            while (mult2 <= limit)
+            {
+                total2 = total2 += mult2;
+                mult2 += 31;
+            }
+
+            total = total1 + total2;
+
+            Console.WriteLine("The total is {0}", total);
+
+
+
+        }
+    }
+}
